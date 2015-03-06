@@ -1,0 +1,215 @@
+body {
+    overflow: auto;
+}
+
+a {
+    outline: none;
+    color: black;
+}
+
+td {
+    vertical-align: top;
+}
+
+.ui-field-contain {
+    padding: 0;
+    border-bottom-width: 0px;
+}
+
+.ui-selectmenu {
+    z-index: 1001 !important;
+}
+
+.ui-btn.ui-btn-right {
+    text-align: right;
+}
+
+.ui-btn.ui-btn-left {
+    text-align: left;
+}
+
+.ui-mobile-viewport textarea.ui-input-text {
+    margin: 0;
+}
+
+.ui-field-contain div.ui-input-text,
+.ui-field-contain textarea.ui-input-text,
+.ui-field-contain div.ui-input-search,
+.ui-field-contain div.ui-slider:not(.ui-slider-switch),
+.ui-field-contain div.ui-select {
+    width: 100%;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.ui-mobile-viewport .ui-footer .ui-body {
+    clear: none;
+}
+
+.ui-mobile-viewport .ui-header div.ui-navbar,
+.ui-mobile-viewport .ui-footer div.ui-navbar {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+
+/* Listview */
+
+.ui-listview > li a > h3 {
+    margin: 0;
+}
+
+.ui-listview .ui-li-has-thumb > .ui-btn > img:first-child {
+    height: 5em;
+}
+
+.ui-li.ui-screen-hidden {
+    display: none !important;
+}
+
+/* see ETST-7646 */
+@media all and (min-width: 28em){
+    .ui-mobile-viewport .ui-field-contain .ui-controlgroup-controls {
+        display: block;
+        width: auto;
+        float: none;
+    }
+}
+
+/* ETST-7532 */
+.ui-icon.ui-icon-none {
+    background: none;
+    background-image: none;
+}
+
+.ui-icon-shadow.ui-icon-none {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+ul[data-role="listview"] li {
+    min-height: 20px;
+}
+
+.tiggzi-mobiletemplate {
+    background-color: transparent;
+    padding: 0px;
+}
+
+/* ETST-10870 */
+.ui-header > .ui-btn-left,
+.ui-header > .ui-btn-right {
+    max-width: 30%;
+}
+
+.ui-header  ui-select > ui-btn {
+    width: 100%;
+}
+
+/* ETST-12129 */
+.ui-collapsible > .ui-collapsible-content {
+    border-top: 1px solid transparent;
+    margin-top: -1px;
+}
+
+/*ETST-14349 */
+.content-secondary .ui-collapsible-content ul[data-role="listview"] {
+	border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.content-secondary .ui-collapsible-content [data-role="listview"] .ui-li.ui-first-child {
+    border-top-width: 1px;
+}
+
+.content-secondary .ui-scrollview-view > .ui-collapsible {
+    margin-top: 0px;
+}
+
+.content-secondary  .ui-collapsible .hasDatepicker {
+    width: 100%;
+}
+
+.ui-popup-container{
+	width:92.5%;
+	max-width:500px!important;
+}
+
+.ui-popup-container.ui-popup-hidden{
+    visibility:hidden;
+}
+
+.cell_break{
+        clear:both;
+}
+
+.progress-liquid-cell {
+    display: inline-block;
+    box-sizing: border-box;
+    height: auto;
+    vertical-align: top;
+    margin-right: -5px;
+}
+
+.progress-liquid{
+    box-sizing: border-box;
+}
+
+.ui-input-text, .ui-input-search,.ui-select {
+	margin:0px;
+}
+
+.ui-field-contain div.ui-input-text.ui-btn-inline, 
+.ui-field-contain textarea.ui-input-text.ui-btn-inline, 
+.ui-field-contain div.ui-input-search.ui-btn-inline, 
+.ui-field-contain div.ui-slider:not(.ui-slider-switch).ui-btn-inline, 
+.ui-field-contain div.ui-select.ui-btn-inline {
+	display:inline-block;
+}
+
+
+.ui-btn-icon-left.ui-mini:after, .ui-btn-icon-right.ui-mini:after {
+    margin-top: -11px;
+}
+
+/* Hide icon disc when no icon is used */
+
+.ui-btn-icon-left.ui-icon-none:after, .ui-btn-icon-right.ui-icon-none:after,
+.ui-btn-icon-top.ui-icon-none:after, .ui-btn-icon-bottom.ui-icon-none:after,
+.ui-btn-icon-notext.ui-icon-none:after  {
+    background: none;
+}
+
+.ui-scrollview-view {
+    transform: none !important;
+    -webkit-transform: none !important;
+}
+
+.ui-mobiletable tbody th {
+    margin: 0;
+}
+
+.cell-wrapper {
+    display: inline;
+    word-wrap: break-word;
+}
+
+.ui-table-reflow .cell-wrapper {
+    display: inline-block;
+}
+
+.ui-table-reflow.ui-responsive {
+    display: table;
+}
+
+.ui-mobiletable colgroup {
+    display: none;
+}
+
+.ui-header .ui-btn:not(.ui-input-clear-hidden) {
+    display: block;
+}
