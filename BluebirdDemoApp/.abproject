@@ -1,0 +1,40 @@
+{
+  "ProjectName": "BluebirdDemoApp",
+  "ProjectGuid": "f4ed13fd-7d3f-491b-9395-2825106f2264",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.BluebirdDemoApp",
+  "DisplayName": "BluebirdDemoApp",
+  "Author": "",
+  "Description": "",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.5.0",
+  "AndroidPermissions": [],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{4c8e8617-6a3b-4681-be83-458436e55354}",
+  "WP8ProductID": "{782d1567-82bb-4eb0-846b-4bebe3524fd2}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.BluebirdDemoApp",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
