@@ -1,0 +1,52 @@
+.bg-image-class {
+	background-image:url("../image/appbg_small.png");
+    background-size:cover;
+    border-style:none;
+    border-color: transparent
+}
+
+.bg-detail-class {
+	background: rgba(0,0,0,0.5);
+    
+}
+
+.bg-detail-popup-class {
+	background: rgba(0,0,0,0.75);
+    
+}
+
+.ui-panel {
+	border-style: none;
+    background-color: transparent;
+	list-style-type: none;
+}
+
+
+.ui-panel-list {
+	list-style-type: none;
+}
+
+
+
+canvas.jSignature { 
+    height: 250px; 
+}
+
+.bg-success-image-class {
+	background-image:url("../image/successbg_small.png");
+    background-size:cover;
+    border-style:none;
+    border-color: transparent
+}
+
+.disable-button {
+	display: hidden;
+}
+
+.enable-button {
+	display: show;
+}
+
+.hidden-label {
+	display: none;
+}
