@@ -4,20 +4,22 @@
   "projectVersion": 1,
   "AppIdentifier": "com.telerik.BluebirdDemoApp",
   "DisplayName": "BluebirdDemoApp",
-  "Author": "",
-  "Description": "",
+  "Author": "Progress BravePoint",
+  "Description": "BluebirdDemoApp",
   "BundleVersion": "1.0",
   "AndroidVersionCode": "1",
   "iOSDeviceFamily": [
-    "1",
     "2"
   ],
   "iOSBackgroundMode": [],
   "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
   "FrameworkVersion": "3.5.0",
-  "AndroidPermissions": [],
+  "AndroidPermissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.INTERNET"
+  ],
   "DeviceOrientations": [
-    "Portrait",
     "Landscape"
   ],
   "AndroidHardwareAcceleration": "false",
