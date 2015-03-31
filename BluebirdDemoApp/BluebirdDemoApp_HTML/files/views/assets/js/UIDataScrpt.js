@@ -640,7 +640,8 @@ function embedPDF() {
     
    
     //$('<p>Test</p>').appendTo('#ReviewAndSign_lbl_contract');
-    $('#ReviewAndSign_lbl_contract').append('<embed src=BluebirdDemoApp_HTML/files/views/assets/image/RA-797.pdf width=625px height=600px>');
+    //$('#ReviewAndSign_lbl_contract').append('<embed src=BluebirdDemoApp_HTML/files/views/assets/image/RA-797.pdf width=625px height=600px>');
+    $('#ReviewAndSign_lbl_contract').append('<embed src=BluebirdDemoApp_HTML/files/views/assets/image/RA-797.pdf width=625px height=530px>');
     
 }
 
