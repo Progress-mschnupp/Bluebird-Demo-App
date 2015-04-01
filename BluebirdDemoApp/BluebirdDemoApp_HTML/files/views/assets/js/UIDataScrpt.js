@@ -671,4 +671,3 @@ function dimBackground() {
     // set the background over that by css class
     
 }
-

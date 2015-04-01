@@ -4683,3 +4683,10 @@ $("#ServiceOrderDetails").die("pageinit").live("pageinit", function(event, ui) {
     Appery.processSelectMenu($(this));
     ServiceOrderDetails_js();
 });
+
+// Done - Clear session cache and restart app
+$(document).on("click", "#SuccessPopup_btn_done", function(){
+    sessionStorage.clear();
+    Appery.closePopup();
+   // window.location.reload(true);
+});
