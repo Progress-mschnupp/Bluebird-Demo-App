@@ -22,7 +22,7 @@ function initSessionStorage() {
     removeServiceInfo();
     
     // Payment Info
-    
+    removePaymentInfo();
     
     sigElement = null;
 }
@@ -637,11 +637,14 @@ function signSelected() {
 function embedPDF() {
 	//insert DOM for embed of pdf into the name="lbl_contract" div element
     //<embed src="url.pdf" width=800px height=1200px>
-    
-   
     //$('<p>Test</p>').appendTo('#ReviewAndSign_lbl_contract');
     //$('#ReviewAndSign_lbl_contract').append('<embed src=BluebirdDemoApp_HTML/files/views/assets/image/RA-797.pdf width=625px height=600px>');
     $('#ReviewAndSign_lbl_contract').append('<embed src=BluebirdDemoApp_HTML/files/views/assets/image/RA-797.pdf width=625px height=530px>');
+    
+}
+
+function removeEmbeddedPDF() {
+    $('#ReviewAndSign_lbl_contract').empty();
     
 }
 
@@ -659,9 +662,11 @@ function createSignature() {
 }
 
 function clearSignature() {
-   
-	sigElement.jSignature("reset");
+   	sigElement.jSignature("reset");
+}
 
+function removeSignature() {
+     sigElement.jSignature().remove();
 }
 
 /* ====================================== Success Screen ======================================= */

@@ -1934,7 +1934,7 @@ Signature_js = function(runBeforeShow) { /* Object & array with components "name
         });
         $('#Signature').bind({
             popupafteropen: function() {
-                createSignature();;
+                createSignature(); 
             },
         });
 
@@ -1991,7 +1991,6 @@ Signature_js = function(runBeforeShow) { /* Object & array with components "name
                 if (!$(this).attr('disabled')) {
                     signSelected();
                     Appery.closePopup();
-
                 }
             },
         }, '#Signature_mobilecontainer4 [name="btn_sumbitSig"]');
@@ -4686,7 +4685,49 @@ $("#ServiceOrderDetails").die("pageinit").live("pageinit", function(event, ui) {
 
 // Done - Clear session cache and restart app
 $(document).on("click", "#SuccessPopup_btn_done", function(){
-    sessionStorage.clear();
     Appery.closePopup();
-   // window.location.reload(true);
+    sessionStorage.clear();
+    initSessionStorage();
+    // Driver Details
+    toggle('SearchDriver_grid_DriverList', 'mob', 'false');
+    // Service Order Details
+    toggle('ServiceOrderDetails_grid_SelectedService', 'mob', 'false');
+    toggle('ServiceOrderDetails_btn_changeService', 'mob', 'false');
+    toggle('ServiceOrderDetails_btn_SetService', 'mob', 'true');
+    toggle('ServiceOrderDetails_grid_SetService', 'mob', 'true');
+    // Vehicle Details
+    toggle('SearchVehicle_grid_VehicleList', 'mob', 'false');
+    toggle('SearchVehicle_liq_vehicleList', 'mob', 'false');
+    // Payment Details
+    localStorage.clear(); // For CC and Payment Info
+    toggle('PaymentDetails_btn_changePayment', 'mob', 'false');
+    toggle('PaymentDetails_btn_submitPayment', 'mob', 'true');
+    toggle('PaymentDetails_lbl_cardType', 'mob', 'false');
+    toggle('PaymentDetails_drpdwn_cardType', 'mob', 'true');
+    toggle('PaymentDetails_lbl_currentType', 'mob', 'false');
+    toggle('PaymentDetails_drpdwn_currentType', 'mob', 'true');
+    toggle('PaymentDetails_lbl_CardExpDate', 'mob', 'false');
+    toggle('PaymentDetails_inp_CardExpDate', 'mob', 'true');
+    toggle('PaymentDetails_lbl_depositAmountDue', 'mob', 'false');
+    toggle('PaymentDetails_drpdwn_depositType', 'mob', 'true');
+    toggle('PaymentDetails_lbl_depositType', 'mob', 'false');
+    toggle('PaymentDetails_drpdwn_depositType', 'mob', 'true');
+    toggle('PaymentDetails_lbl_NameOnCard', 'mob', 'false');
+    toggle('PaymentDetails_txt_NameOnCard', 'mob', 'true');
+    toggle('PaymentDetails_lbl_CardNum', 'mob', 'false');
+    toggle('PaymentDetails_txt_CardNum', 'mob', 'true');
+    toggle('PaymentDetails_lbl_CardCVV', 'mob', 'false');
+    toggle('PaymentDetails_txt_CardCVV', 'mob', 'true');
+    toggle('PaymentDetails_lbl_depositAmountDue', 'mob', 'false');
+    toggle('PaymentDetails_txt_amountDue', 'mob', 'true');
+    toggle('PaymentDetails_lbl_ARNum', 'mob', 'false');
+    toggle('PaymentDetails_txt_ARNum', 'mob', 'true');
+    toggle('PaymentDetails_lbl_PONum', 'mob', 'false');
+    toggle('PaymentDetails_txt_PONum', 'mob', 'true');
+    // Contract and Review
+    removeEmbeddedPDF();
+    disableContract();
+    toggle('ReviewAndSign_grid_Review', 'mob', 'false');
+    toggle('ReviewAndSign_grid_contract', 'mob', 'false');
+    $('#ReviewAndSign').toggle();
 });
