@@ -650,15 +650,16 @@ function removeEmbeddedPDF() {
 
 /* ====================================== Signature Popup ======================================= */
 
+var sigCounter = 0;
 function createSignature() {
+   $(document).ready(function() {
+   sigCounter++;
+   if (sigCounter == 1) {
+       $("#Signature_gridcell_signature").jSignature();
+   }
+});
     
-    
- $(document).ready(function() {
-     $("#Signature_gridcell_signature").jSignature();
-	    });
-    
- sigElement = $("#Signature_gridcell_signature");
- 
+sigElement = $("#Signature_gridcell_signature");
 }
 
 function clearSignature() {
@@ -666,7 +667,8 @@ function clearSignature() {
 }
 
 function removeSignature() {
-     sigElement.jSignature().remove();
+     $("#Signature_gridcell_signature").empty();
+     sigCounter = 0;
 }
 
 /* ====================================== Success Screen ======================================= */

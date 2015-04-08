@@ -960,6 +960,7 @@ MessagePopup_js = function(runBeforeShow) { /* Object & array with components "n
             click: function() {
                 if (!$(this).attr('disabled')) {
                     Appery.closePopup();
+                    
 
                 }
             },
@@ -1991,6 +1992,7 @@ Signature_js = function(runBeforeShow) { /* Object & array with components "name
                 if (!$(this).attr('disabled')) {
                     signSelected();
                     Appery.closePopup();
+                    removeSignature();
                 }
             },
         }, '#Signature_mobilecontainer4 [name="btn_sumbitSig"]');
@@ -3087,7 +3089,6 @@ ReviewAndSign_js = function(runBeforeShow) { /* Object & array with components "
             click: function() {
                 if (!$(this).attr('disabled')) {
                     Appery.openPopup('Signature', $(this));
-
                 }
             },
         }, '#ReviewAndSign_mobilecontainer4 [name="btn_submitOrder"]');
